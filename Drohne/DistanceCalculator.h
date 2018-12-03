@@ -4,10 +4,17 @@
 
 #ifndef DROHNE_DISTANCECALCULATOR_H
 #define DROHNE_DISTANCECALCULATOR_H
+#include "Point.h"
+#include <Math.h>
 
 
 class DistanceCalculator {
+private:
+	double getRadians(double Degree);
 
+
+public:
+	double Distance(const Point &from, const Point &to);
 };
 
 

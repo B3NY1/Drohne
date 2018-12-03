@@ -11,10 +11,9 @@ private:
 
 public:
     Point(std::string name, double latitude, double longitude);
+	Point(double latitude, double longitude);
 
-    //TODO: create 'void Set(...)' method
-
-    //TODO: create 'void print(...)' method
+	void set(std::string name, double latitude, double longitude);
 
 	double getLatitude() const;
 	double getLongitude() const;

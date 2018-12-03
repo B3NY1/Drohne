@@ -8,7 +8,14 @@ Point::Point(std::string name, double latitude, double longitude)
     m_latitude(latitude),
     m_longitude(longitude)
 {
-    //nothing to do here
+	//nothing to do here
+}
+
+Point::Point(double latitude, double longitude)
+{
+	m_name = "noname";
+	m_latitude = latitude;
+	m_longitude = longitude;
 }
 
 double Point::getLatitude() const
@@ -29,4 +36,13 @@ std::string Point::getName() const
 void Point::Print()
 {
 	std::cout << m_name << " | Lat: " << m_latitude << " | Long: " << m_longitude << std::endl;
+}
+
+void Point::set(std::string name, double latitude, double longitude)
+{
+	if (name != "") {
+		m_name = name;
+	}
+	m_latitude = latitude;
+	m_longitude = longitude;
 }

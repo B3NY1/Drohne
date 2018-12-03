@@ -14,5 +14,5 @@ double DistanceCalculator::Distance(const Point &from, const Point &to)
 	double dx = 111.3 * cos(lat1) * (from.getLongitude() - to.getLongitude());
 	double dy = 111.3 * (from.getLatitude() - to.getLatitude());
 
-	return sqrt(dx * dx * dy * dy);
+	return sqrt(dx * dx + dy * dy);
 }

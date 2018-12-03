@@ -1,5 +1,6 @@
-#include "DistanceCalculator.h"
 #define _USE_MATH_DEFINES
+#include "DistanceCalculator.h"
+
 
 DistanceCalculator* DistanceCalculator::m_pTheInstance = nullptr;
 

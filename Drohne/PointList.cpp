@@ -27,9 +27,9 @@ void PointList::print() {
 }
 
 PointList::PointList(PointList& orig) {
-	for (int i = 0; i < orig.pointList.size; i++)
+	for (int i = 0; i < orig.pointList.size(); i++)
 	{
-		pointList.push_back(new Point(orig.pointList.at(i)->getName, orig.pointList.at(i)->getLatitude, orig.pointList.at(i)->getLongitude));
+		pointList.push_back(new Point(orig.pointList.at(i)->getName(), orig.pointList.at(i)->getLatitude(), orig.pointList.at(i)->getLongitude()));
 	}
 }
 

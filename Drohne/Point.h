@@ -16,6 +16,12 @@ public:
 
     //TODO: create 'void print(...)' method
 
+	double getLatitude() const;
+	double getLongitude() const;
+	std::string getName() const;
+
+	void Print();
+
 };
 
 

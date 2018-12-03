@@ -9,6 +9,8 @@ class PointList {
 private:
     std::vector<Point*> pointList;
 public:
+	PointList();
+	PointList(PointList& orig);
     void add(Point& arg);
 
     void print();

@@ -11,6 +11,11 @@ int main() {
 	pList->add(*p1);
 	pList->add(*p2);
 	pList->print();
+
+	PointList* pList2 = new PointList(*pList);
+	pList2->add(*p1);
+	pList->print();
+	pList2->print;
 /*
 	PointList* pWayPoints = new PointList();
 

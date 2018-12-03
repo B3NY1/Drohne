@@ -3,5 +3,7 @@ Debug
 Drohne.sln
 Drohne/Debug
 Drohne/Drohne.sln
-Drohne/Drohnevcxproj.filters
-Drohne/Drohnevcxproj.user
+Drohne/Drohne.vcxproj
+Drohne/Drohne.vcxproj.filters
+Drohne/Drohne.vcxproj.user
+CMakeLists.txt

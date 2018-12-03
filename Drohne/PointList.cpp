@@ -12,8 +12,7 @@ void PointList::add(Point &arg) {
 }
 
 void PointList::print() {
-    //TODO: not implemented, print every point in pointList using the print() method of class Point
-
+    // Print every point in pointList using the print() method of class Point
     std::cout << "PointList (" << pointList.size() << " Points):" << std::endl;
     for (auto &i : pointList) {
         i->Print();

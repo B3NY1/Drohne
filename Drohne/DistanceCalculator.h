@@ -5,7 +5,7 @@
 #ifndef DROHNE_DISTANCECALCULATOR_H
 #define DROHNE_DISTANCECALCULATOR_H
 #include "Point.h"
-#include <Math.h>
+#include <math.h>
 
 
 class DistanceCalculator {

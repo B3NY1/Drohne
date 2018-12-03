@@ -13,6 +13,8 @@ public:
 	PointList(PointList& orig);
     void add(Point& arg);
 
+    double getDistance();
+
     void print();
 
     //TODO: erzwinge tiefe Kopie -> Copy Constructor hinzufügen

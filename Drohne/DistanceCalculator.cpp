@@ -1,6 +1,7 @@
-#define _USE_MATH_DEFINES
 #include "DistanceCalculator.h"
+#define _USE_MATH_DEFINES
 
+DistanceCalculator* DistanceCalculator::m_pTheInstance = nullptr;
 
 double DistanceCalculator::getRadians(double degree)
 {

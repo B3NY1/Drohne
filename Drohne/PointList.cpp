@@ -1,7 +1,3 @@
-//
-// Created by felix on 03.12.18.
-//
-
 #include "PointList.h"
 
 void PointList::add(Point &arg) {

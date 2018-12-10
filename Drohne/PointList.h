@@ -16,8 +16,6 @@ public:
     double getDistance();
 
     void print();
-
-    //TODO: erzwinge tiefe Kopie -> Copy Constructor hinzufügen
 };
 
 

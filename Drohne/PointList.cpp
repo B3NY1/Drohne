@@ -12,7 +12,7 @@ double PointList::getDistance() {
     double distance = 0.0;
 
     for(int i=0; i<pointList.size()-1; ++i){
-        distance += DistanceCalculator::getInstance()->Distance(*pointList.at(i), *pointList.at(i+1));
+        distance += DistanceCalculator::getInstance()->distance(*pointList.at(i), *pointList.at(i+1));
     }
 
     return distance;
@@ -29,7 +29,10 @@ void PointList::print() {
 PointList::PointList(PointList& orig) {
 	for (int i = 0; i < orig.pointList.size(); i++)
 	{
-		pointList.push_back(new Point(orig.pointList.at(i)->getLatitude(), orig.pointList.at(i)->getLongitude(), orig.pointList.at(i)->getName()));
+	    Point* pNewPoint = new Point(orig.pointList.at(i)->getLatitude(),
+	                                 orig.pointList.at(i)->getLongitude(),
+	                                 orig.pointList.at(i)->getName());
+		pointList.push_back(pNewPoint);
 	}
 }
 

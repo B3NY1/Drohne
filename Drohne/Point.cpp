@@ -32,7 +32,7 @@ void Point::Print()
 }
 
 void Point::set(double latitude, double longitude, std::string name) 
-//kein default construktor, da sonst der name bei keiner Angabe auf "noname"  gesetzt wird.
+//kein default parameter, da sonst der name bei keiner Angabe auf "noname" gesetzt wird.
 {
 	if (name != "") {
 		m_name = name;

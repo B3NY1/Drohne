@@ -3,7 +3,7 @@
 #include "PointList.h"
 
 int main() {
-	Point* p1 = new Point("dhbw saftladen",20,10);
+/*	Point* p1 = new Point("dhbw saftladen",20,10);
 	Point* p2 = new Point("miau", 30, -29);
 
 
@@ -16,7 +16,7 @@ int main() {
 	pList2->add(*p1);
 	pList->print();
 	pList2->print();
-
+	*/
 	PointList* pWayPoints = new PointList();
 
 	pWayPoints->add(*(new Point(std::string("707372 Stuttgart, Kreuzenacher Strasse 47"), 48.803242, 9.221968)));

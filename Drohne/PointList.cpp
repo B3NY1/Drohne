@@ -3,7 +3,7 @@
 
 void PointList::add(Point &arg) {
     // Erstelle flache Kopie von 'arg' und füge sie in 'pointList' ein,
-    // damit die Lebenszeit des Objekts unabhängig ist.
+    // damit die Lebenszeit des Objekts unabhängig ist. (flache Kopie weil, Point keine Pointer enthält)
     auto* pNewPoint = new Point(arg);
     pointList.push_back(pNewPoint);
 }
@@ -35,7 +35,7 @@ PointList::PointList(PointList& orig) {
 
 PointList::PointList()
 {
-
+	//default construktor ecplizit deklariert da copy construktor vorhanden
 }
 
 

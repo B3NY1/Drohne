@@ -1,3 +1,11 @@
+/*
+ * 23.12.2018
+ *
+ * Author:
+ * Benjamin Diesch
+ * Felix Preuschoff
+ */
+
 #ifndef DROHNE_DISTANCECALCULATOR_H
 #define DROHNE_DISTANCECALCULATOR_H
 #include "Point.h"

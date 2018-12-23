@@ -1,3 +1,11 @@
+/*
+ * 23.12.2018
+ *
+ * Author:
+ * Benjamin Diesch
+ * Felix Preuschoff
+ */
+
 #include <utility>
 
 #include "Point.h"

@@ -11,7 +11,7 @@
 
 void PointList::add(Point &arg) {
     // Erstelle flache Kopie von 'arg' und füge sie in 'pointList' ein,
-    // damit die Lebenszeit des Objekts unabhängig ist.
+    // damit die Lebenszeit des Objekts unabhängig ist. (flache Kopie weil, Point keine Pointer enthält)
     auto* pNewPoint = new Point(arg);
     pointList.push_back(pNewPoint);
 }
@@ -20,7 +20,7 @@ double PointList::getDistance() {
     double distance = 0.0;
 
     for(int i=0; i<pointList.size()-1; ++i){
-        distance += DistanceCalculator::getInstance()->Distance(*pointList.at(i), *pointList.at(i+1));
+        distance += DistanceCalculator::getInstance()->distance(*pointList.at(i), *pointList.at(i+1));
     }
 
     return distance;
@@ -37,13 +37,16 @@ void PointList::print() {
 PointList::PointList(PointList& orig) {
 	for (int i = 0; i < orig.pointList.size(); i++)
 	{
-		pointList.push_back(new Point(orig.pointList.at(i)->getName(), orig.pointList.at(i)->getLatitude(), orig.pointList.at(i)->getLongitude()));
+	    Point* pNewPoint = new Point(orig.pointList.at(i)->getLatitude(),
+	                                 orig.pointList.at(i)->getLongitude(),
+	                                 orig.pointList.at(i)->getName());
+		pointList.push_back(pNewPoint);
 	}
 }
 
 PointList::PointList()
 {
-
+	//default construktor ecplizit deklariert da copy construktor vorhanden
 }
 
 

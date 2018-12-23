@@ -18,10 +18,9 @@ private:
     double m_longitude;
 
 public:
-    Point(std::string name, double latitude, double longitude);
-	Point(double latitude, double longitude);
+    Point(double latitude, double longitude, std::string name = "noname");
 
-	void set(std::string name, double latitude, double longitude);
+	void set(double latitude, double longitude, std::string name);
 
 	double getLatitude() const;
 	double getLongitude() const;
